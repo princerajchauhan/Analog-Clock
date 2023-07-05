@@ -12,7 +12,7 @@ function rotate() {
     document.getElementById('min').style.transform = `rotate(${min * 6}deg)`
     document.getElementById('sec').style.transform = `rotate(${sec * 6}deg)`
 
-    new Audio('./ticking.mp3').play()
+    // new Audio('./ticking.mp3').play()
 }
 
 setInterval(() => {
@@ -25,6 +25,7 @@ function digitalClock(){
     let d = new Date()
     let h = d.getHours()
     h = h>12 ? h%12 : h
+    h = h<10 ? '0'+h : h
     let m = d.getMinutes()
     m = m<10 ? '0'+m : m
     let s = d.getSeconds()

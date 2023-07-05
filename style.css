@@ -91,3 +91,21 @@
     text-shadow: 0 0 3px purple;
 }
 
+
+/* ********************************* RESPONSIVE ******************************* */
+
+@media screen and (max-width: 300px) {
+    .container{
+        width: 70vw;
+        height: 70vw;
+    }
+    .digital{
+        width: 60vw;
+        height: 10vw;
+    }
+    #hr, #minute, #second{
+        height: 6vw;
+        padding: 0.8vw;
+        font-size: 4vw;
+    }
+}
